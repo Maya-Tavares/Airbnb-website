@@ -44,9 +44,8 @@ body{
 
 }
 
-.subtitle img{
-    width: 20px;
-    height: 20px;
+.icon-1{
+    font-size: 1em;
     margin-right: 10px;
 }
 
@@ -150,6 +149,13 @@ h2{
     object-fit: contain;
 }
 
+.icon{
+    font-size: 2.5em;
+    margin: 10px;
+}
+
+
+
 /* PART 4/5 */
 
 .card-valor{
@@ -181,7 +187,7 @@ a {
 
 /* responsivo */
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .galeria {
         flex-direction: column;
         align-items: center;
@@ -212,6 +218,15 @@ a {
     }
 }
 
+@media (max-width: 768px) {
+    .icon {
+        font-size: 2em; /* Reduz o tamanho para telas menores que 768px */
+    }
+}
 
-/* checking */
+@media (max-width: 576px) {
+    .icon {
+        font-size: 1.5em; /* Reduz o tamanho ainda mais para telas menores que 576px */
+    }
+}
 
