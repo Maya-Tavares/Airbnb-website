@@ -1,0 +1,217 @@
+:root {
+    --color-white: #fff0f3;
+    --color-pink: #dc143c;
+    --color-black: rgb(0,0,0);
+    --font-body: "Poppins", sans-serif;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-body);
+}
+
+/* adicionando o container */
+
+body{
+    padding: 20px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    box-sizing: border-box;
+    height: 100%;
+    margin: 10px;
+}
+
+.container {
+    width: 90%;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 10px auto;
+}
+
+/* PART 1 */
+
+.title{
+    font-weight: 700;
+    text-align: left;
+    color: var(--color-pink);
+}
+
+.subtitle{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.subtitle img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.subtitle p{
+    top: 7rem;
+    font-size: small; 
+    text-align: left;
+}
+
+/* PART 2 */
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 10px;
+    padding: 0;
+    max-width: 100%;
+}
+
+.img-grande {
+    border-radius: 8px;
+    width: 50%;
+    max-width: 500px;
+    min-width: 400px;
+    margin-right: 10px;
+}
+
+.quadros{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 400px;
+    margin: 10px;
+
+}
+
+.side-img{
+    width: calc(50% - 10px); 
+    max-width: 750px;
+    max-height: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    
+}
+
+.side-img img{
+    max-width: 250px;
+    max-height: 100px;
+}
+
+/* PART 3 */
+
+.description{
+    text-align: left;
+    margin: 10px auto;
+    font-weight: 200;
+}
+
+h2{
+    font-weight: 400;
+    font: bold;
+    font-weight: 400;
+    color: var(--color-pink);
+    text-align: left;
+}
+
+/* PART 4 */
+
+.beneficios{
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    
+}
+
+.card2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.icons{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    row-gap: 5px;
+    width: 50%;
+    max-width: 200px;
+    padding: 0;
+    align-items: center;
+    margin: 0;
+}
+
+.icons img {
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* PART 4/5 */
+
+.card-valor{
+    border: 3px solid var(--color-pink);
+    padding: 5px 10px;
+    border-radius: 7px;
+    transition: 0.7s;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 50%;
+    max-width: 500px;
+}
+
+h3{
+    margin: 10px;
+}
+
+a {
+    color: var(--color-white);
+    background-color: var(--color-pink);
+    text-decoration: none;
+    transition: color 0.5s;
+    padding: 0 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+
+/* responsivo */
+
+@media (max-width: 600px) {
+    .galeria {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .img-grande {
+        width: 80%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .quadros {
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    .side-img {
+        width: calc(50% - 5px); /* Ajuste para telas menores */
+    }
+
+    .container {
+        width: 90%;
+    }
+    
+    a{
+        display: flex;
+    }
+}
+
+
+/* checking */
+
